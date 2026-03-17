@@ -4,12 +4,19 @@ This repository contains my technical research and articles focused on malware d
 
 ---
 
-## 6. Thread Telemetry Desynchronization – Part 2
+## 7. Thread Telemetry Desynchronization – Part 2
 This article builds upon previous research on PEB manipulation and explores how attackers create desynchronization at the thread level. Instead of focusing only on process-level artifacts, this research analyzes how multiple telemetry layers can present inconsistent views of the same execution.
 
 By combining techniques such as PEB spoofing, thread context manipulation, LOLBin chaining, stack spoofing, and indirect syscalls, attackers can generate conflicting telemetry across user-mode and kernel-level observations.
 
 **Key topics:** thread-level telemetry analysis, PEB spoofing, thread context manipulation, stack spoofing, indirect syscalls, multi-layer telemetry desynchronization.
+
+---
+
+## 6. How Reliable Are the Logs?
+This research examines the inconsistencies in process creation telemetry in Windows environments. It highlights how differences between kernel-recorded data and user-mode observations can create blind spots that mislead security monitoring systems.  
+
+**Key topics:** process creation telemetry, kernel vs user-mode logs, blind spots in detection, multi-source correlation, improving detection reliability.
 
 ---
 
